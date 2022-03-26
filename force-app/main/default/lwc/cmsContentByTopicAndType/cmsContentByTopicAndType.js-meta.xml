@@ -1,15 +1,9 @@
-<!--
- * Copyright (c) 2021, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>50.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>CMS Content For This Topic</masterLabel>
-    <description>Displays CMS content published to this community that is tagged with a</description>
+    <description>Displays CMS content published to this community that is tagged with a topic. Custom Version</description>
     <targets>
         <target>lightning__RecordPage</target>
         <target>lightningCommunity__Page</target>
