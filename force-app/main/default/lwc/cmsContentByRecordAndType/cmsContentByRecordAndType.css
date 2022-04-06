@@ -1,4 +1,3 @@
-  
 /*
  * Copyright (c) 2021, salesforce.com, inc.
  * All rights reserved.
@@ -19,10 +18,20 @@ div.my-new-class-rent-too-high {
 }
 
 /* CMS Card Body */
+/*
 div.cms-content-block div.cms-card {
-    margin-bottom: 20px;
+    border: 1px solid #d4d4d4;
 }
 
+*/
+
+.cms-card {
+    border-radius: .25rem;
+    height: 8rem;
+    width: 12rem; 
+}
+
+/*
 p.cms-card-body-hidden {
     display: none !important;
 }
@@ -30,17 +39,18 @@ p.cms-card-body-hidden {
 p.cms-card-body {
     margin: 20px;
 }
+
 div.cms-card-footer {
     margin: 20px;
     font-size: 10px;
     font-color: #666;
 }
+*/
 
 
 /* CMS Card Image */
 div.cms-card-image img {
-    border: 1px solid #000;
-    max-width: 90%;
+    max-width: 40%;
 }
 div.cms-card-image {
     margin-left: auto;
@@ -79,7 +89,7 @@ div.cms-gallery-block::-webkit-scrollbar {
 div.cms-gallery-block div.cms-card {
     flex: 0 0 auto;
     max-width: 100%;
-    margin-right: 0px;
+    margin-right: auto;
     min-width: 100%;
 }
 

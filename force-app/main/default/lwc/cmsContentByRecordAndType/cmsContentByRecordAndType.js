@@ -99,7 +99,7 @@ export default class cmsContentByRecordAndType extends LightningElement {
 
                 //HTML Decode Rich Text
                 //console.log("CMS Component Debug || Checking if " + nodeName + " of type " + node.nodeType + " needs to be decoded.");
-                if (node.nodeType == 'RichText') {
+                if (node.nodeType == 'RichText' || node.nodeType == 'Text') {
                     //Encode
                     node.value = this.htmlDecode(node.value);
                 }
@@ -109,6 +109,7 @@ export default class cmsContentByRecordAndType extends LightningElement {
                 if (node.nodeType == 'Media' && node.url.substring(0, 4) != 'http') {
                     node.url = '/sfsites/c' + node.url;
                 }
+                
             }
 
             //Adjust item based on config
