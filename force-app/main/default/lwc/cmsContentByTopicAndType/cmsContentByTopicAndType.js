@@ -19,7 +19,6 @@ export default class cmsContentByTopicAndType extends LightningElement {
     @api bodyAttribute;
     @api imageAttribute;
     @api linkAttribute;
-    @api contentDisplayStyle;
 
     //Params for content
     topicMode = true;

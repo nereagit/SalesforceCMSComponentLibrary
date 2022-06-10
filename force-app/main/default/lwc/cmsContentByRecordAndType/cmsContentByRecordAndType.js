@@ -20,7 +20,6 @@ export default class cmsContentByRecordAndType extends LightningElement {
     @api bodyAttribute;
     @api imageAttribute;
     @api linkAttribute;
-    @api contentDisplayStyle;
 
     // Params from parent
     @api topicMode = false;
@@ -31,8 +30,6 @@ export default class cmsContentByRecordAndType extends LightningElement {
     items;
     attributesCollected = new Set();
     error;
-    isCardDisplayStyle = false;
-    isGalleryDisplayStyle = false;
 
     //Fetch CMS content
     @wire(getCMSContent, { recordId: '$recordId', numItems: '$numberContentItems', managedContentType: '$contentType', singleTopicMode: '$topicMode' })
@@ -64,12 +61,7 @@ export default class cmsContentByRecordAndType extends LightningElement {
 
     //Private function to do all the data massaging
     cleanUpForDisplay(data) {
-        //Determine display style
-        if (this.contentDisplayStyle == 'Grid') {
-            this.isCardDisplayStyle = true;
-        } else {
-            this.isGalleryDisplayStyle = true;
-        }
+
 
         //Grab data
         this.contentArray = data;
